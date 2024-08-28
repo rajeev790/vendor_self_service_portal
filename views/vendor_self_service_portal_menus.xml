@@ -1,0 +1,7 @@
+<odoo>
+    <menuitem id="menu_vendor_self_service_portal" name="Vendor Portal" sequence="10"/>
+
+    <menuitem id="menu_vendor_forecast" name="Forecasts" parent="menu_vendor_self_service_portal" action="action_vendor_forecast" sequence="10"/>
+    
+    <menuitem id="menu_vendor_adjustment_request" name="Adjustment Requests" parent="menu_vendor_self_service_portal" action="action_vendor_adjustment_request" sequence="20"/>
+</odoo>

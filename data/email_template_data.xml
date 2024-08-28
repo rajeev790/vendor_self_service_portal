@@ -1,0 +1,16 @@
+<odoo>
+    <record id="email_template_vendor_adjustment" model="mail.template">
+        <field name="name">Vendor Adjustment Request</field>
+        <field name="model_id" ref="model_vendor_adjustment_request"/>
+        <field name="subject">Adjustment Request for Order ${object.order_id.name}</field>
+        <field name="body_html">
+            <![CDATA[
+            <p>Dear Procurement Team,</p>
+            <p>A new adjustment request has been submitted for the order <strong>${object.order_id.name}</strong>.</p>
+            <p><strong>Details:</strong> ${object.adjustment_detail}</p>
+            <p><strong>Comment:</strong> ${object.comment}</p>
+            ]]>
+        </field>
+        <field name="email_to">procurement@fatmugdesigns.com</field>
+    </record>
+</odoo>
